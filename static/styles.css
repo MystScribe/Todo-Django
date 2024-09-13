@@ -1,0 +1,266 @@
+html, body { height: 90%; width: 100%; margin: 0; padding: 0; }
+
+body {
+    background-color: #2f2525;
+    font-family: 'Century Gothic' !important;
+}
+
+.todo {
+    display: inline-block;
+    background-color: #009cff !important;
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 587px;
+    border: solid transparent 2px;
+    border-radius: 20px;
+    overflow: hidden;   /* Hides overflow text */
+
+}
+
+
+.todo h1 {
+    text-align: center !important;
+    font-size: 30px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.todo h2 {
+    display: flex;
+    flex-direction: row;
+    text-align: left !important;
+    align-items: center;
+    word-wrap: break-word;  /* Ensures that long words will break to avoid overflow */
+    word-break: break-word;  /* Breaks words to fit within the container */
+}
+.todo div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    align-items: center;
+    margin-top: 5px;
+
+}
+.todo p {
+    margin-bottom: 180px;
+    text-align: left !important;
+    word-wrap: break-word;  /* Ensures that long words will break to avoid overflow */
+    word-break: break-word;  /* Breaks words to fit within the container */
+
+}
+.todo small {
+    display: flex;
+    text-align: left !important;
+
+}
+
+
+
+
+
+.aaa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.todoD {
+    width: 80% !important;
+    min-height: 500px;
+    height: fit-content;
+    padding: 10px 10px 0px 10px;
+    margin: 20px;
+    background-color: #009cff !important;
+    border: solid transparent 2px;
+    border-radius: 20px;
+}
+
+.todoD h1 {
+    text-align: center;
+    font-size: 30px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.todoD h2 {
+    display: inline;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.todoD div {
+    display: inline;
+
+}
+
+.todoD p {
+    margin-left: 10px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+
+
+
+.todoD small {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-top: 50px;
+
+}
+.dlt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1000px;
+
+
+}
+.dlt2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+
+}
+
+
+.delete {
+    padding: 20px 40px 20px 40px;
+    border: solid red 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+.delete:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+nav {
+    background-color: #009cff;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0 20px 20px !important;
+    list-style: none;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 2px !important;
+    cursor: pointer;
+
+}
+li a:hover {
+    font-weight: bolder;
+}
+
+.add {
+    margin: -8px 0 0 1435px !important;
+}
+
+
+.add button {
+    padding: 10px;
+    border: solid #232323 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 16px !important;
+
+}
+.add button:hover {
+    background-color: #2c2c2c !important;
+    border: solid 2px #2c2c2c !important;
+    color: white !important;
+
+}
+
+.major {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 0px !important;
+    margin-right: 7px;
+    text-decoration: none;
+    color: #2f2525;
+
+}
+nav ul li a {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #2f2525;
+
+}
+a {
+    text-decoration: none;
+}
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 80% !important;
+    min-height: 650px;
+    height: fit-content;
+    padding: 10px 10px 0px 10px;
+    margin: 20px;
+    background-color: #009cff !important;
+    border: solid transparent 2px;
+    border-radius: 20px;
+}
+.submit {
+    padding: 20px 40px 20px 40px;
+    border: solid #00ff00 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #00ff00;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.submit:hover {
+    background-color: #00ff00;
+    color: white;
+}
+.Change {
+    padding: 20px 40px 20px 40px;
+    border: solid #0048ff 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #0048ff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Change:hover {
+    background-color: #0048ff;
+    color: white;
+}
+input[type="checkbox"] {
+    width: 3em;
+    height: 3rem;
+    accent-color: #0048ff;
+    margin-left: 35px;
+
+}
+input[type="checkbox"]:hover {
+    color: black;
+}
+

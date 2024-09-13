@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+    {% block Todo %}
+        <section style="text-align: center">
+            {% for todo in Todos %}
+
+
+                    <section class="todo">
+
+                            <h1><a href="{% url 'Todo:Detail' todo.id %}">{{ todo.title }}</a></h1>
+                            <div class="haaa">
+                                <h2>{{ todo.todolist }}</h2>
+                                <div>
+                                    {% if todo.Done %}
+                                        Done ✓
+                                    {% else %}
+                                        NOT Done ✗
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <p>{{ todo.textarea }}</p>
+                            <small>Created in {{ todo.created }}</small>
+
+
+                    </section>
+
+            {% endfor %}
+        </section>
+
+
+
+    {% endblock %}

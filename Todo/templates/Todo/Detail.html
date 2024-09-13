@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block Todo %}
+    <div class="aaa">
+
+        <section class="todoD">
+
+                        <h1>{{ TodoDetail.title }}</h1>
+                        <div class="haaa">
+                            <h2>● {{ TodoDetail.todolist }}</h2>
+                            <div>
+                                {% if TodoDetail.Done %}
+                                    Done ✓
+                                {% else %}
+                                    NOT Done ✗
+                                {% endif %}
+                            </div>
+                        </div>
+                        <h3>note:</h3>
+                        <p>{{ TodoDetail.textarea }}</p>
+
+
+                        <div style="display: flex; flex-direction: row; margin-top: 240px !important; margin-bottom: 20px !important;">
+                            <small>Created in {{ TodoDetail.created }}</small>
+
+
+                            <div class="dlt">
+                                <a href="{% url 'Todo:Delete' TodoDetail.id %}">
+                                    <button class="delete">
+                                        Delete
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="dlt2">
+                                <a href="{% url 'Todo:Update' TodoDetail.id%}">
+                                    <button class="Change">
+                                            Update
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+        </section>
+    </div>
+
+{% endblock %}

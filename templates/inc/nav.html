@@ -1,0 +1,16 @@
+<nav>
+    <ul>
+        <li><a class="major" href="{% url 'Todo:Todo' %}">Home</a></li>
+        {% if user.is_authenticated %}
+            <li><a href="{% url 'accounts:SignOut' %}">Sign Out</a></li>
+        {% else %}
+            <li><a href="{% url 'accounts:SignUp' %}">Sign Up</a></li>
+            <li><a href="{% url 'accounts:SignIn' %}">Sign In</a></li>
+        {% endif %}
+        <li class="add">
+            <a href="{% url 'Todo:Create' %}"><button> Add a new one</button></a>
+        </li>
+
+
+    </ul>
+</nav>
